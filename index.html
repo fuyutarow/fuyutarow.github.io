@@ -5,28 +5,35 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>fuyutarow</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	</head>
 
-	<body class="is-preload">
-	<div id="app">
+<head>
+  <title>fuyutarow</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+  <!-- vue-markdown -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/katex@0.6.0/dist/katex.min.css">
 
-		<header id="header">
-			<div class="inner">
-				<a href="#" class="image avatar"><img :src="profile.img" alt="" /></a>
-				<h1><strong>fuyutarow</strong></h1>
-				<p>{{ profile.bio }}</p>
-			</div>
-		</header>
+  <!-- material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-		<div id="main">
-			<!-- <section>
+<body class="is-preload">
+  <div id="app">
+
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="image avatar"><img :src="profile.img" alt="" /></a>
+        <h1><strong>fuyutarow</strong></h1>
+        <p>{{ profile.bio }}</p>
+      </div>
+    </header>
+
+    <div id="main">
+      <!-- <section>
 				<header class="major">
 					<h2>Ipsum lorem dolor aliquam ante commodo<br />
 					magna sed accumsan arcu neque.</h2>
@@ -37,31 +44,31 @@
 				</ul>
 			</section> -->
 
-			<section>
-				<h1>Profile</h1>
-				<p>{{ readme }}</p>
-				<!-- <ul class="actions">
+      <section>
+        <h1>Profile</h1>
+        <vue-markdown :source="readme"></vue-markdown>
+        <!-- <ul class="actions">
 					<li><a href="#" class="button">Learn More</a></li>
 				</ul> -->
-			</section>
+      </section>
 
-			<section>
-				<h2>Works</h2>
-				<div class="row">
-					<article class="col-6 col-12-xsmall work-item" v-for="project in projects">
-						<a :href="project.url" class="image fit thumb"><img :src="project.img" alt="" /></a>
-						<h2>
-							{{project.title}}
-							<i v-if="project.github"><a :href="project.github" class="icon fa-github"><span class="label">Github</span></a></i>
-							<!-- <i v-if="project.youtube"><a :herf="project.youtube" class="icon"><i class="fab fa-youtube fa-2x"></i></a></i> -->
-							<i v-if="project.youtube"><a :herf="project.youtube" class="icon"><i class="fab fa-youtube"></i></a></i>
-						</h2>
-						<p>{{project.description}}</p>
-					</article>
-				</div>
-			</section>
+      <section>
+        <h1>Works</h1>
+        <div class="row">
+          <article class="col-6 col-12-xsmall work-item" v-for="project in projects">
+            <a :href="project.url" class="image fit thumb"><img :src="project.img" alt="" /></a>
+            <h2>
+				<vue-markdown :source="project.title"></vue-markdown>
+				<a v-if="project.github" :href="project.github" class="icon fa-github"><span class="label">Github</span></a>
+				<a v-if="project.youtube" :href="project.youtube" class="icon"><i class="fab fa-youtube"></i></a>
+				<a v-if="project.web" :href="profile.web" class="icon"><i class="material-icons">web</i></a>
+            </h2>
+            <vue-markdown :source="project.description"></vue-markdown>
+          </article>
+        </div>
+      </section>
 
-			<!-- <section>
+      <!-- <section>
 				<h2>Get In Touch</h2>
 				<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 				<div class="row">
@@ -85,47 +92,45 @@
 			</section> -->
 
 
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li v-if="profile.twitter"><a :href="profile.twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li v-if="profile.github"><a :href="profile.github" class="icon fa-github"><span class="label">Github</span></a></li>
+      <footer id="footer">
+        <div class="inner">
+          <ul class="icons">
+            <li v-if="profile.twitter"><a :href="profile.twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li v-if="profile.github"><a :href="profile.github" class="icon fa-github"><span class="label">Github</span></a></li>
+            <!-- <li><a href="#" class="icon fa-soundcloud" target="_blank"><span class="label">SoundCloud</span></a></li> -->
+
+            <!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+            <!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
+            <!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+            <!-- <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li> -->
+            <!-- <li><a class="icon fa-home"><span class="label">Address</span></a></li> -->
+            <!-- <li><a class="icon fa-mobile"><span class="label">Phone</span></a></li> -->
+            <li v-if="profile.email"><a class="icon fa-envelope-o" :href='"mailto:" + profile.email'><span class="label">Email</span> {{profile.email}}</a></li>
+            <!-- <li v-if="profile.email"><a class="icon fa-envelope-o" :href='mailto:"fuyutarow@gmail.com"'><span class="label">Email</span> {{profile.email}}</a></li> -->
+          </ul>
+          <ul class="copyright">
+            <li>&copy; fuyutarow | Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </footer>
 
 
-					<!-- <li><a href="#" class="icon fa-soundcloud" target="_blank"><span class="label">SoundCloud</span></a></li> -->
-					<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
-					<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
-					<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-					<!-- <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li> -->
-					
-					<!-- <li>
-						<a class="icon fa-home"><span class="label">Address</span></a>
-					</li>
-					<li>
-						<a class="icon fa-mobile"><span class="label">Phone</span></a>
-					</li> -->
-					<li v-if="profile.email">
-						<a class="icon fa-envelope-o"><span class="label">Email</span> {{profile.email}}</a>
-					</li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; fuyutarow | Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
+      <!-- HTML5UP -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+      <!-- vue-markdown -->
+      <script src="assets/js/vue-markdown.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
 
 
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      <script src="assets/js/app.js"> </script>
+    </div>
+</body>
 
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-		<script src="assets/js/app.js" > </script>
-	</div>
-	</body>
 </html>
