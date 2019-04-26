@@ -6,7 +6,6 @@ const data = {
   profile : {
     bio : "量子情報",
     img : "images/yasuna+.gif",
-    // img: "//avatars3.githubusercontent.com/u/14998939?s=460&v=4",
     twitter : "//twitter.com/sktnkysh",
     github : "//github.com/fuyutarow",
     email : "fuyutarow@gmail.com",
@@ -26,6 +25,7 @@ const data = {
       title : "[arXimedes.io](//arXimedes.net)",
       description : `
 ６時間くらいで一気につくったarXivの論文を検索するためのWebアプリ．
+Netlifyでホスティング.
             `,
       web : 'arximdes.net',
       date : 2019,
@@ -33,28 +33,18 @@ const data = {
     {
       title : "ポートフォリオサイト",
       description : `
-このサイトです．github.ioでホスティング．この売りはNodeを立てていないのがポイントだと思います．ネットにはひろくHTML
-Vueの強みを活かせるのはこういうポートフォリオサイトかなと思います．
-[HTML5 UP](//html5up.net)
+このサイトです．GitHub Pagesでホスティング．
+[HTML5 UP](//html5up.net)のデザインを使っています．
+この構成なら，Nodeを知らない人でもfreeのHTML，CSSのデザインを持ってきてVueで柔軟にポートフォリオをつくることができると思います．
             `,
-      github : "//github.com/fuyutarow/Responder-template",
-      date : 2019,
-    },
-    {
-      title : "都々逸サーバ GraphQL API",
-      description : `
-私は都々逸が好きです．
-Responder-templateでつくりました．
-        `,
-      github : "//github.com/fuyutarow/Responder-template",
+      github : "//github.com/fuyutarow/fuyutarow.github.io",
       date : 2019,
     },
     {
       title : "Responder-exmaples",
       description : `
 ResopnderとDjango DB migrationの連携．
-ASGIなWebSocketで双方向通信\
-    も，GraphQLも，
+ResponderのおかげでWebSocketで双方向通信も，GraphQLも簡単に導入できて，しかもDBとのマイグレーションだけDjangoを用いています．
         `,
       github : "//github.com/fuyutarow/Responder-template",
       date : 2019,
@@ -119,6 +109,7 @@ ASGIなWebSocketで双方向通信\
       title : "ローレンツ・アトラクタ",
       description : `
 ルンゲクッタ法でローレンツ方程式の数値解を求めています．
+space打鍵でパラメータがランダムに変わり，アトラクタの形状が変化します．
             `,
       date : 2016,
       url : "//fuyutarow.github.io/lorenz_attractor/",
