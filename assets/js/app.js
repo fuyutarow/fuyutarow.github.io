@@ -16,7 +16,6 @@ const data = {
 パラメータ推定に興味を持っています．
 統計や量子論に限らず，機械学習，制御理論，信号処理など，パラメータ推定という観点から一纏めに理解したいです．
 
-
 いくつかプログラムを組んだりソフトウェアを作ったりしていました．
 以下にいくつか掲載します．
     `,
@@ -28,7 +27,10 @@ const data = {
       url : '//arximedes.netlify.com',
       web : '//arximedes.netlify.com',
       description : `
-６時間くらいで一気につくったarXivの論文を検索するためのWebアプリ．
+６時間くらいで一気につくったarXivの論文:newspaper:を検索するためのWebアプリ．
+PWA対応．
+
+Vueと[Vuetify](//vuetifyjs.com/en/)でフロントだけつくっています．
 Netlifyでホスティング.
             `,
     },
@@ -48,7 +50,7 @@ Netlifyでホスティング.
       github : "//github.com/fuyutarow/Responder-template",
       description : `
 ResopnderとDjango DB migrationの連携．
-ResponderのおかげでWebSocketで双方向通信も，GraphQLも簡単に導入できて，しかもDBとのマイグレーションだけDjangoを用いています．
+ResponderはPythonのモダンなWebフレームワーク．WebSocketで双方向通信，GraphQLも簡単に対応しています．ここにDBとのマイグレーションだけDjangoを用いています．
         `,
     },
     {
@@ -65,7 +67,7 @@ ResponderのおかげでWebSocketで双方向通信も，GraphQLも簡単に導�
       url : "//github.com/fuyutarow/tomatowk/tree/electron",
       github : "//github.com/fuyutarow/tomatowk/tree/electron",
       description : `
-ポモドーロアプリです．Vue, Electronでつくりました．(PWAでつくればよかった...)．インストール方法今度書きます．
+:tomato:ポモドーロアプリ:rocket:です．Vue, Electronでつくりました．(PWAでつくればよかった...)．インストール方法今度書きます．
             `,
     },
     {
@@ -88,7 +90,10 @@ ResponderのおかげでWebSocketで双方向通信も，GraphQLも簡単に導�
       title : "アフィリエイト",
       date : 2016,
       description : `
-アフィリエイトサイトを運用して, WordPress, Nginx, Docker
+友達とアフィリエイトサイトを運用していました．
+３ヶ月で100万PVを達成しました:v:
+
+WordPress, Nginx, Docker
             `,
     },
     {
@@ -98,7 +103,7 @@ ResponderのおかげでWebSocketで双方向通信も，GraphQLも簡単に導�
       url : "//fuyutarow.github.io/honey5/",
       github : '//github.com/fuyutarow/honey5',
       description : `
-六方格子上の五目並べ．
+六方格子:bee:上の五目並べ．
 一人で遊べるように簡単なゲームAI(Minmax)が相手をしてくれます．
             `,
     },
@@ -108,7 +113,7 @@ ResponderのおかげでWebSocketで双方向通信も，GraphQLも簡単に導�
       url : "//fuyutarow.github.io/dobutsu-shogi/",
       github : "//github.com/fuyutarow/dobutsu-shogi",
       description : `
-どうぶつしょうぎ
+どうぶつしょうぎ:elephant:
 一人で遊べるように簡単なゲームAI(Minmax)が相手をしてくれます．
             `,
     },
@@ -131,6 +136,7 @@ space打鍵でパラメータがランダムに変わり，アトラクタの形
       url : "//fuyutarow.github.io/danmaku",
       github : "//github.com/fuyutarow/danmaku",
       description : `
+ゼロプレイヤーゲーム．眺めて楽しみます． 
 個人的に作ったプログラムのうち現存する最古のもの．
 これ以前のものは，GitHubにあげる習慣がなくて失われてしまった...
 Arduinoのプログラムとか，ライフゲームのプログラムとか結構作ってたのになあ...
@@ -140,14 +146,20 @@ Arduinoのプログラムとか，ライフゲームのプログラムとか結�
       title : "Cacco",
       date : 2016,
       description : `
-[Cacco inc.](//cacco.co.jp)でインターン, Djangoアプリ開発をしていました．当時，Pythonでインターンを受け入れてくださった数少ない企業様でした．お世話になりました．
+[Cacco inc.](//cacco.co.jp)でインターン, Djangoアプリ開発をしていました．
             `,
     },
     {
       title : "水中ロボコンinJAMSTEC 2015",
       date : 2015,
-      img : "images/iruka-2015.gif",
-      description : "水中ロボコン",
+      video : "images/iruka-2015.gif",
+      description : `
+大学の仲間と水中ロボコンに出ました．イルカ:dolphin:型の水中ロボコンを開発して
+
+動画は自分がプロトタイプとしてつくったものです．(これは水中で動きません)
+
+工業科出身の友達の技術や考え方に，終始感銘を受けました．このプロジェクトのおかげで友達ができました:smile: そして大学での過ごし方を方向づける大きな契機になりました．
+      `
     },
   ],
 }
