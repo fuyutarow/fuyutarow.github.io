@@ -51,9 +51,9 @@
               <a v-if="project.youtube" :href="project.youtube" class="icon"><i class="fab fa-youtube"></i></a>
               <a v-if="project.web" :href="project.web" class="icon"><i class="material-icons">web</i></a>
             </h2>
-            <a v-if="project.img" :href="project.url" class="image fit thumb"><img :src="project.img" alt="" /></a>
+            <a v-if="project.img" :href="project.url" class="image fit thumb"><img :src="project.img" /></a>
             <video v-else-if="project.video" class="image fit thumb" autoplay loop muted playsinline>
-              <source :src="project.video" type="video/mp4">
+              <source :src="project.video" type="video/mp4" />
             </video>
             <vue-markdown :source="project.description"></vue-markdown>
           </article>

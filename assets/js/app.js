@@ -110,6 +110,7 @@ WordPress, Nginx, Docker
     {
       title : "どうぶつしょうぎ",
       date : 2016,
+      img : 'images/doubutsu-shogi.png',
       url : "//fuyutarow.github.io/dobutsu-shogi/",
       github : "//github.com/fuyutarow/dobutsu-shogi",
       description : `
@@ -152,7 +153,7 @@ Arduinoのプログラムとか，ライフゲームのプログラムとか結�
     {
       title : "水中ロボコンinJAMSTEC 2015",
       date : 2015,
-      video : "images/iruka-2015.gif",
+      video : "images/iruka-2015.mp4",
       description : `
 大学の仲間と水中ロボコンに出ました．イルカ:dolphin:型の水中ロボコンを開発して
 
