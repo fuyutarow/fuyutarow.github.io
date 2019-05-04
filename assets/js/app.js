@@ -24,14 +24,17 @@ const data = {
       title : "arXimedes.io",
       date : 2019,
       img : "images/arXimedes-thumnail.png",
-      url : '//arximedes.netlify.com',
-      web : '//arximedes.netlify.com',
+      url : '//arximedes.io',
+      web : '//arximedes.io',
       description : `
-６時間くらいで一気につくったarXivの論文:newspaper:を検索するためのWebアプリ．
-PWA対応．
+鋭意開発中．arXivの論文:newspaper:を検索するためのWebアプリ(PWA)．
+AndroidでもiPhoneでもMacでもWindowsでもインストールできます．
 
-Vueと[Vuetify](//vuetifyjs.com/en/)でフロントだけつくっています．
-Netlifyでホスティング.
+予定している仕様
+- firebase経由でsocial login
+- Google Play, App Store, Windows Storeで配信
+
+Vue, [Vuetify](//vuetifyjs.com/en/), [Netlify](//www.netlify.com)
             `,
     },
     {
@@ -40,8 +43,8 @@ Netlifyでホスティング.
       github : "//github.com/fuyutarow/fuyutarow.github.io",
       description : `
 このサイトです．GitHub Pagesでホスティング．
+
 [HTML5 UP](//html5up.net)のデザインを使っています．
-この構成なら，Nodeを知らない人でもfreeのHTML，CSSのデザインを持ってきてVueで柔軟にポートフォリオをつくることができると思います．
             `,
     },
     {
@@ -87,16 +90,6 @@ ResponderはPythonのモダンなWebフレームワーク．WebSocketで双方�
         `,
     },
     {
-      title : "アフィリエイト",
-      date : 2016,
-      description : `
-友達とアフィリエイトサイトを運用していました．
-３ヶ月で100万PVを達成しました:v:
-
-WordPress, Nginx, Docker
-            `,
-    },
-    {
       title : "Honey5",
       date : 2017,
       img : '//github.com/sktnkysh/honey5/raw/master/docs/honeycobm.gif',
@@ -109,13 +102,23 @@ WordPress, Nginx, Docker
     },
     {
       title : "どうぶつしょうぎ",
-      date : 2016,
+      date : 2017,
       img : 'images/doubutsu-shogi.png',
       url : "//fuyutarow.github.io/dobutsu-shogi/",
       github : "//github.com/fuyutarow/dobutsu-shogi",
       description : `
 どうぶつしょうぎ:elephant:
 一人で遊べるように簡単なゲームAI(Minmax)が相手をしてくれます．
+            `,
+    },
+    {
+      title : "アフィリエイト",
+      date : 2016,
+      description : `
+友達とアフィリエイトサイトを運用していました．
+３ヶ月で100万PVを達成しました:v:
+
+WordPress, Nginx, Docker
             `,
     },
     {
@@ -132,15 +135,18 @@ space打鍵でパラメータがランダムに変わり，アトラクタの形
     },
     {
       title : "だんまく",
-      date : 2015,
+      date : 2016,
       img : "images/danmaku-thumnail.png",
       url : "//fuyutarow.github.io/danmaku",
       github : "//github.com/fuyutarow/danmaku",
       description : `
-ゼロプレイヤーゲーム．眺めて楽しみます． 
+ゼロプレイヤーゲーム．AliceとBobが弾幕を撃ち合う様子を眺めて楽しみます．
 個人的に作ったプログラムのうち現存する最古のもの．
-これ以前のものは，GitHubにあげる習慣がなくて失われてしまった...
-Arduinoのプログラムとか，ライフゲームのプログラムとか結構作ってたのになあ...
+
+学部１年の頃は他にもいくつかプログラムを組んでいました．
+Webスクレイピング，Arduino上のプログラム，Unity，デスクトップマスコット，enchant.js，Qt上でライフゲームなどいろいろ．
+自作PCを組んで自宅サーバを立てたり．
+ただ当時はGitHubでレポジトリとして保存する習慣がなく，これらのプログラムはすべて消失してしまいました... :disappointed_relieved:
             `,
     },
     {
@@ -161,6 +167,15 @@ Arduinoのプログラムとか，ライフゲームのプログラムとか結�
 
 工業科出身の友達の技術や考え方に，終始感銘を受けました．このプロジェクトのおかげで友達ができました:smile: そして大学での過ごし方を方向づける大きな契機になりました．
       `
+    },
+    {
+      title : "Udacity",
+      date : 2015,
+      description : `
+はじめてのプログラミングは，[Udacity](//www.udacity.com)という学習サイトで[Webクローラ・スクレイピング](//www.youtube.com/watch?v=CDXOcvUNBaA)というレッスンで学びました．
+
+大学入学前の１ヵ月でWindows Vista，Cygwin上でPython2.6を実行させていた記憶があります．
+            `,
     },
   ],
 }
