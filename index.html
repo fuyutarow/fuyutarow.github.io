@@ -30,8 +30,26 @@
     <header id="header">
       <div class="inner">
         <a href="#" class="image avatar"><img :src="profile.img" alt="" /></a>
-        <h1><strong>fuyutarow</strong></h1>
-        <p>{{ profile.bio }}</p>
+        <h2><strong>fuyutarow</strong></h2>
+        <h5 style="color: rgba(255, 255, 255, 0.4)">
+          <ul class="icons">
+            <li>Follow me!</li>
+            <li v-if="profile.twitter"><a :href="profile.twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li v-if="profile.github"><a :href="profile.github" class="icon fa-github"><span class="label">Github</span></a></li>
+            <!-- <li><a href="#" class="icon fa-soundcloud" target="_blank"><span class="label">SoundCloud</span></a></li> -->
+
+            <!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+            <!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
+            <!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+            <!-- <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li> -->
+            <!-- <li><a class="icon fa-home"><span class="label">Address</span></a></li> -->
+            <!-- <li><a class="icon fa-mobile"><span class="label">Phone</span></a></li> -->
+          </ul>
+          <ul class="icons">
+            <li v-if="profile.email"><a class="icon fa-envelope-o" :href='"mailto:" + profile.email'><span class="label">Email</span> {{profile.email}}</a></li>
+            <!-- <li v-if="profile.email"><a class="icon fa-envelope-o" :href='mailto:"fuyutarow@gmail.com"'><span class="label">Email</span> {{profile.email}}</a></li> -->
+          </ul>
+        </h5>
       </div>
     </header>
 
@@ -116,23 +134,6 @@
 
       <footer id="footer">
         <div class="inner">
-          <ul class="icons">
-            <li>Follow me!</li>
-            <li v-if="profile.twitter"><a :href="profile.twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li v-if="profile.github"><a :href="profile.github" class="icon fa-github"><span class="label">Github</span></a></li>
-            <!-- <li><a href="#" class="icon fa-soundcloud" target="_blank"><span class="label">SoundCloud</span></a></li> -->
-
-            <!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
-            <!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
-            <!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-            <!-- <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li> -->
-            <!-- <li><a class="icon fa-home"><span class="label">Address</span></a></li> -->
-            <!-- <li><a class="icon fa-mobile"><span class="label">Phone</span></a></li> -->
-          </ul>
-          <ul class="icons">
-            <li v-if="profile.email"><a class="icon fa-envelope-o" :href='"mailto:" + profile.email'><span class="label">Email</span> {{profile.email}}</a></li>
-            <!-- <li v-if="profile.email"><a class="icon fa-envelope-o" :href='mailto:"fuyutarow@gmail.com"'><span class="label">Email</span> {{profile.email}}</a></li> -->
-          </ul>
           <ul class="copyright">
             <li>&copy; fuyutarow | Design: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>

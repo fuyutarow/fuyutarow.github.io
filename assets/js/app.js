@@ -4,7 +4,6 @@
 
 const data = {
   profile : {
-    bio : "量子情報",
     img : "images/yasuna+.gif",
     twitter : "//twitter.com/sktnkysh",
     github : "//github.com/fuyutarow",
