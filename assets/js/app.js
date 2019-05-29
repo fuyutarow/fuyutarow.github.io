@@ -20,6 +20,19 @@ const data = {
     `,
   projects : [
     {
+      title : "convert-json-env",
+      date : 2019,
+      github : '//github.com/fuyutarow/convert-json-env',
+      description : `
+A CLI tool for converting JSON to env file.
+
+VueアプリをNetlifyにホスティングする際に，firebaseの設定を環境変数として定義する必要がありました．
+このツールにより，firebaseの設定ファイル(JSON)から速やかにenv形式に変更できます．
+
+需要はともかく，私にとってはじめてのnpmパッケージです．
+            `,
+    },
+    {
       title : "arXimedes.io",
       date : 2019,
       img : "images/arXimedes-thumnail.png",
@@ -33,7 +46,7 @@ AndroidでもiPhoneでもMacでもWindowsでもインストールできます．
 - firebase経由でsocial login
 - Google Play, App Store, Windows Storeで配信
 
-Vue, [Vuetify](//vuetifyjs.com/en/), [Netlify](//www.netlify.com)
+TypeScript, Vue, [Vuetify](//vuetifyjs.com/en/), [Netlify](//www.netlify.com)
             `,
     },
     {
@@ -41,9 +54,11 @@ Vue, [Vuetify](//vuetifyjs.com/en/), [Netlify](//www.netlify.com)
       date : 2019,
       github : "//github.com/fuyutarow/fuyutarow.github.io",
       description : `
-このサイトです．GitHub Pagesでホスティング．
+このサイトです．
 
-[HTML5 UP](//html5up.net)のデザインを使っています．
+フリーのHTML/CSSテンプレートにVueを組み込んでポートフォリオを作成しています．
+
+[HTML5 UP](//html5up.net)を使用．GitHub Pagesでホスティング．
             `,
     },
     {
@@ -52,7 +67,10 @@ Vue, [Vuetify](//vuetifyjs.com/en/), [Netlify](//www.netlify.com)
       github : "//github.com/fuyutarow/Responder-template",
       description : `
 ResopnderとDjango DB migrationの連携．
-ResponderはPythonのモダンなWebフレームワーク．WebSocketで双方向通信，GraphQLも簡単に対応しています．ここにDBとのマイグレーションだけDjangoを用いています．
+[Responder](https://python-responder.org/en/latest/)はPythonのモダンなWebフレームワークで，WebSocket，GraphQLに対応しています．
+DBとのマイグレーションにだけDjangoを用いています．
+
+この構成でなにか機械学習アプリケーションを立てたい...
         `,
     },
     {
@@ -76,7 +94,7 @@ ResponderはPythonのモダンなWebフレームワーク．WebSocketで双方�
       title : "機械学習支援アプリケーション",
       date : 2018,
       description : `
-インターン先で開発しています．そのうち公開できる日を楽しみにしています．DRF(Django Rest Framework), PostgreSQL, Vue, Docker, Tensorflow, scikit-learn
+インターン先で開発しています．公開できる日を楽しみにしています．DRF(Django Rest Framework), PostgreSQL, Vue, Docker, Tensorflow, scikit-learn
             `,
     },
     {
@@ -85,7 +103,7 @@ ResponderはPythonのモダンなWebフレームワーク．WebSocketで双方�
       url : "//fuyutarow.github.io/dobutsu-shogi/",
       youtube : "//www.youtube.com/watch?v=KwddVMbK4oQ",
       description : `
-学部3年の夏，[第3回全脳アーキテクチャ・ハッカソン](https://wba-initiative.org/2755/)に出場しました．この１ヵ月間，ずっと海馬の勉強をしていました．
+学部3年の夏，[第3回全脳アーキテクチャ・ハッカソン](https://wba-initiative.org/2755/)に出場しました．
         `,
     },
     {
@@ -97,6 +115,8 @@ ResponderはPythonのモダンなWebフレームワーク．WebSocketで双方�
       description : `
 六方格子:bee:上の五目並べ．
 一人で遊べるように簡単なゲームAI(Minmax)が相手をしてくれます．
+
+TypeScript, React
             `,
     },
     {
@@ -108,6 +128,8 @@ ResponderはPythonのモダンなWebフレームワーク．WebSocketで双方�
       description : `
 どうぶつしょうぎ:elephant:
 一人で遊べるように簡単なゲームAI(Minmax)が相手をしてくれます．
+
+TypeScript, React
             `,
     },
     {
@@ -117,7 +139,7 @@ ResponderはPythonのモダンなWebフレームワーク．WebSocketで双方�
 友達とアフィリエイトサイトを運用していました．
 ３ヶ月で100万PVを達成しました:v:
 
-WordPress, Nginx, Docker
+Google Analytics, WordPress, Nginx, Docker
             `,
     },
     {
